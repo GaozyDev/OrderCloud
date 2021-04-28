@@ -2,8 +2,12 @@ package com.gl.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @SpringBootApplication
+@EnableEurekaClient
+@EnableFeignClients(basePackages = "com.gl.product.client")
 public class OrderApplication {
 
     public static void main(String[] args) {
