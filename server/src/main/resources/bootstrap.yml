@@ -7,8 +7,6 @@ spring:
         enabled: true
         service-id: CONFIG
       profile: dev
-server:
-  port: 8082
 eureka:
   client:
     service-url:
